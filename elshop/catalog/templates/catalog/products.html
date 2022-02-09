@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% if products %}
+        <ul>
+            {% for product in products %}
+        <li>{{ product }}</li>
+    {% endfor %}.
+
+    </ul>
+    {% endif %}
+
+    <button onclick="sortDown()" class="btn btn-primary" type="button">A-Z</button>
+    <button onclick="sortUp()" class="btn btn-primary" type="button">Z-A</button>
+
+    {% load static %}
+    {% csrf_token %}
+
+    <script src="{% static '/catalog/js/filter.js' %}"></script>
+
+
+</body>
+</html>

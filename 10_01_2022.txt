@@ -1,0 +1,15 @@
+https://miro.com/
+https://www.templatemonster.com/ru/?aff=TM&gclid=EAIaIQobChMIpb_04uCs9QIVEE4YCh2PbgwAEAAYASAAEgK3LvD_BwE
+000webhost
+1-
+django-admin startproject elshop
+2-
+
+12_02_2022
+python manage.py migrate
+py manage.py makemigrations 'name_base'
+py manage.py sqlmigrate 'name_base' 0001
+py manage.py createsuperuser
+py manage.py runserver
+
+https://www.videvo.net/
